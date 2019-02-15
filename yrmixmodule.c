@@ -31,27 +31,27 @@ static PyObject *yrmix_getpowhash(PyObject *self, PyObject *args)
     return value;
 }
 
-static PyMethodDef DashMethods[] = {
+static PyMethodDef YrmixMethods[] = {
     { "getPoWHash", yrmix_getpowhash, METH_VARARGS, "Returns the proof of work hash using yrmix hash" },
     { NULL, NULL, 0, NULL }
 };
 
 #if PY_MAJOR_VERSION >= 3
-static struct PyModuleDef DashModule = {
+static struct PyModuleDef YrmixModule = {
     PyModuleDef_HEAD_INIT,
     "yrmix_hash",
     "...",
     -1,
-    DashMethods
+    YrmixMethods
 };
 
 PyMODINIT_FUNC PyInit_yrmix_hash(void) {
-    return PyModule_Create(&DashModule);
+    return PyModule_Create(&YrmixModule);
 }
 
 #else
 
 PyMODINIT_FUNC inityrmix_hash(void) {
-    (void) Py_InitModule("yrmix_hash", DashMethods);
+    (void) Py_InitModule("yrmix_hash", YrmixMethods);
 }
 #endif

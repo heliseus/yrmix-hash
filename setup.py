@@ -18,5 +18,5 @@ yrmix_hash_module = Extension('yrmix_hash',
 
 setup (name = 'yrmix_hash',
        version = '1.3.1',
-       description = 'Binding for Dash X11 proof of work hashing.',
+       description = 'Binding for Yrmix X11 proof of work hashing.',
        ext_modules = [yrmix_hash_module])

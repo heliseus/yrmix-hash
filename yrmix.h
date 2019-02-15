@@ -1,5 +1,5 @@
-#ifndef DASH_H
-#define DASH_H
+#ifndef YRMIX_H
+#define YRMIX_H
 
 #ifdef __cplusplus
 extern "C" {
